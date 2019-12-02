@@ -6,6 +6,11 @@ env:
   CMAKE_BUILD_TYPE: "RELWITHDEBINFO"
   CXXSTD: "17"
 disable:
+  - CMake
+  - autotools
+  - GCC-Toolchain
+  - Python
+  - Python-modules
   - AEGIS
   - AliEn-Runtime
   - AliRoot

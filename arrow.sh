@@ -84,6 +84,7 @@ cmake $SOURCEDIR/cpp                                                            
       -DARROW_PYTHON=OFF                                                                            \
       -DARROW_TENSORFLOW=ON                                                                         \
       -DARROW_GANDIVA=ON                                                                            \
+      ${RE2_ROOT:+-DRE2_ROOT=${RE2_ROOT}}                                                                \
       -DCLANG_EXECUTABLE=${LLVM_ROOT}/bin-safe/clang++
 
 make ${JOBS:+-j $JOBS}
