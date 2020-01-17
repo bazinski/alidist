@@ -79,6 +79,7 @@ popd
 
 # automake -- requires: m4, autoconf, gettext
 pushd automake*
+  autoreconf -ivf
   ./configure --disable-dependency-tracking --prefix $INSTALLROOT
   make ${JOBS+-j $JOBS}
   make install
