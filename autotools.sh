@@ -1,6 +1,6 @@
 package: autotools
 version: "%(tag_basename)s"
-tag: v1.5.0
+tag: v1.6.0
 source: https://github.com/alisw/autotools
 prefer_system: "(?!slc5|slc6)"
 prefer_system_check: |
